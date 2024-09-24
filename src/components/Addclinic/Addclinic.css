@@ -1,0 +1,133 @@
+.container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    border-radius: 50px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .theme-toggle input {
+    width: 2rem;
+    height: 1rem;
+    background-color: #f0e2e2;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .theme-toggle input:checked {
+    background-color: #4299e1;
+  }
+  
+  .theme-toggle input::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateX(0.2rem);
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle input:checked::before {
+    transform: translateX(1rem);
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+  
+  .data-table.dark th,
+  .data-table.dark td {
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  .pill {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .pill.yellow {
+    background-color: #fefcbf;
+    color: #b7791f;
+  }
+  
+  .pill.green {
+    background-color: #c6f6d5;
+    color: #2f855a;
+  }
+  
+  .pill.red {
+    background-color: #feb2b2;
+    color: #c53030;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-edit {
+    background-color: #4299e1;
+    color: white;
+  }
+  
+  .btn-update {
+    background-color: #48bb78;
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #f56565;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .dark {
+    background-color: #1a202c;
+    color: white;
+  }
+  
